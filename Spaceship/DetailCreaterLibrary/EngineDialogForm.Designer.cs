@@ -43,7 +43,6 @@
 			this.label2.Size = new System.Drawing.Size(111, 17);
 			this.label2.TabIndex = 9;
 			this.label2.Text = "Enter max force:";
-			this.label2.Visible = false;
 			// 
 			// saveButton
 			// 
@@ -71,6 +70,11 @@
 			this.mtfBox.Name = "mtfBox";
 			this.mtfBox.Size = new System.Drawing.Size(116, 22);
 			this.mtfBox.TabIndex = 12;
+			this.mtfBox.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			// 
 			// EngineDialogForm
 			// 
@@ -86,6 +90,7 @@
 			this.Controls.Add(this.saveButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "EngineDialogForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Engine parametrs";
 			((System.ComponentModel.ISupportInitialize)(this.mtfBox)).EndInit();
 			this.ResumeLayout(false);

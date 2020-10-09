@@ -41,8 +41,8 @@
 			this.controllerPictureBox.Size = new System.Drawing.Size(58, 56);
 			this.controllerPictureBox.TabIndex = 0;
 			this.controllerPictureBox.TabStop = false;
-			this.controllerPictureBox.SizeChanged += new System.EventHandler(this.controllerPictureBox_SizeChanged);
 			this.controllerPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.controllerPictureBox_MouseDown);
+			this.controllerPictureBox.MouseLeave += new System.EventHandler(this.controllerPictureBox_MouseLeave);
 			this.controllerPictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.controllerPictureBox_MouseMove);
 			this.controllerPictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.controllerPictureBox_MouseUp);
 			// 
@@ -55,7 +55,6 @@
 			this.Controls.Add(this.controllerPictureBox);
 			this.Name = "DirectionController";
 			this.Size = new System.Drawing.Size(58, 56);
-			this.MouseLeave += new System.EventHandler(this.DirectionController_MouseLeave);
 			((System.ComponentModel.ISupportInitialize)(this.controllerPictureBox)).EndInit();
 			this.ResumeLayout(false);
 

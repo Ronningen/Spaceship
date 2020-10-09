@@ -30,7 +30,7 @@
 		{
 			this.saveButton = new System.Windows.Forms.Button();
 			this.minMassLabel = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.mtfLabel = new System.Windows.Forms.Label();
 			this.minMassBox = new System.Windows.Forms.NumericUpDown();
 			this.mtfBox = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.minMassBox)).BeginInit();
@@ -61,18 +61,17 @@
 			this.minMassLabel.TabIndex = 4;
 			this.minMassLabel.Text = "Enter min mass: ";
 			// 
-			// label2
+			// mtfLabel
 			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.mtfLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.AutoSize = true;
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Location = new System.Drawing.Point(12, 58);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(166, 17);
-			this.label2.TabIndex = 6;
-			this.label2.Text = "Enter mass to force coef:";
-			this.label2.Visible = false;
+			this.mtfLabel.AutoSize = true;
+			this.mtfLabel.BackColor = System.Drawing.Color.Transparent;
+			this.mtfLabel.Location = new System.Drawing.Point(12, 58);
+			this.mtfLabel.Name = "mtfLabel";
+			this.mtfLabel.Size = new System.Drawing.Size(166, 17);
+			this.mtfLabel.TabIndex = 6;
+			this.mtfLabel.Text = "Enter mass to force coef:";
 			// 
 			// minMassBox
 			// 
@@ -97,7 +96,7 @@
             1,
             0,
             0,
-            327680});
+            0});
 			// 
 			// mtfBox
 			// 
@@ -125,7 +124,7 @@
 			this.ClientSize = new System.Drawing.Size(186, 152);
 			this.Controls.Add(this.mtfBox);
 			this.Controls.Add(this.minMassBox);
-			this.Controls.Add(this.label2);
+			this.Controls.Add(this.mtfLabel);
 			this.Controls.Add(this.minMassLabel);
 			this.Controls.Add(this.saveButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -144,7 +143,7 @@
 
 		private System.Windows.Forms.Button saveButton;
 		private System.Windows.Forms.Label minMassLabel;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label mtfLabel;
 		public System.Windows.Forms.NumericUpDown minMassBox;
 		public System.Windows.Forms.NumericUpDown mtfBox;
 	}

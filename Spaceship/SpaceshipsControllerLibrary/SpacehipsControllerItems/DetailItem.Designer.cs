@@ -43,12 +43,12 @@
 			this.layoutFlowPanel.BackColor = System.Drawing.Color.Transparent;
 			this.layoutFlowPanel.Controls.Add(this.panelTabulation);
 			this.layoutFlowPanel.Controls.Add(this.titleLabel);
-			this.layoutFlowPanel.Controls.Add(this.detachButton);
 			this.layoutFlowPanel.Controls.Add(this.massLabel);
+			this.layoutFlowPanel.Controls.Add(this.detachButton);
 			this.layoutFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.layoutFlowPanel.Location = new System.Drawing.Point(0, 0);
 			this.layoutFlowPanel.Name = "layoutFlowPanel";
-			this.layoutFlowPanel.Size = new System.Drawing.Size(206, 33);
+			this.layoutFlowPanel.Size = new System.Drawing.Size(200, 33);
 			this.layoutFlowPanel.TabIndex = 1;
 			this.layoutFlowPanel.WrapContents = false;
 			// 
@@ -70,13 +70,13 @@
 			this.titleLabel.Size = new System.Drawing.Size(48, 17);
 			this.titleLabel.TabIndex = 7;
 			this.titleLabel.Text = "Detail ";
-			this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// detachButton
 			// 
 			this.detachButton.AutoSize = true;
 			this.detachButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.detachButton.Location = new System.Drawing.Point(81, 3);
+			this.detachButton.Location = new System.Drawing.Point(134, 3);
 			this.detachButton.Name = "detachButton";
 			this.detachButton.Size = new System.Drawing.Size(63, 27);
 			this.detachButton.TabIndex = 8;
@@ -86,12 +86,13 @@
 			// massLabel
 			// 
 			this.massLabel.AutoSize = true;
-			this.massLabel.Location = new System.Drawing.Point(149, 8);
-			this.massLabel.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+			this.massLabel.Location = new System.Drawing.Point(80, 8);
+			this.massLabel.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
 			this.massLabel.Name = "massLabel";
 			this.massLabel.Size = new System.Drawing.Size(49, 17);
 			this.massLabel.TabIndex = 11;
 			this.massLabel.Text = "Mass: ";
+			this.massLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// DetailItem
 			// 
@@ -102,7 +103,7 @@
 			this.BackColor = System.Drawing.Color.Transparent;
 			this.Controls.Add(this.layoutFlowPanel);
 			this.Name = "DetailItem";
-			this.Size = new System.Drawing.Size(206, 33);
+			this.Size = new System.Drawing.Size(200, 33);
 			this.layoutFlowPanel.ResumeLayout(false);
 			this.layoutFlowPanel.PerformLayout();
 			this.ResumeLayout(false);
@@ -111,10 +112,10 @@
 		}
 
 		#endregion
-		private System.Windows.Forms.Label titleLabel;
-		private System.Windows.Forms.Panel panelTabulation;
-		private System.Windows.Forms.FlowLayoutPanel layoutFlowPanel;
+		protected System.Windows.Forms.Label titleLabel;
+		protected System.Windows.Forms.Panel panelTabulation;
+		protected System.Windows.Forms.FlowLayoutPanel layoutFlowPanel;
 		public System.Windows.Forms.Button detachButton;
-		private System.Windows.Forms.Label massLabel;
+		protected System.Windows.Forms.Label massLabel;
 	}
 }

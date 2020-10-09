@@ -60,6 +60,12 @@
     <Compile Include="SpacehipsControllerItems\EngineItem.Designer.cs">
       <DependentUpon>EngineItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="SpacehipsControllerItems\TankItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpacehipsControllerItems\TankItem.Designer.cs">
+      <DependentUpon>TankItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpaceshipsController.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,12 +79,6 @@
     <Compile Include="SpacehipsControllerItems\SpaceshipItem.Designer.cs">
       <DependentUpon>SpaceshipItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="SpacehipsControllerItems\TankItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SpacehipsControllerItems\TankItem.Designer.cs">
-      <DependentUpon>TankItem.cs</DependentUpon>
-    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -88,17 +88,11 @@
     <EmbeddedResource Include="SpacehipsControllerItems\DetailItem.resx">
       <DependentUpon>DetailItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SpacehipsControllerItems\EngineItem.resx">
-      <DependentUpon>EngineItem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SpaceshipsController.resx">
       <DependentUpon>SpaceshipsController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpacehipsControllerItems\SpaceshipItem.resx">
       <DependentUpon>SpaceshipItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SpacehipsControllerItems\TankItem.resx">
-      <DependentUpon>TankItem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

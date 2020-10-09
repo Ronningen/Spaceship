@@ -16,10 +16,10 @@ namespace SpaceshipsControllerLibrary
 
 		public DirectionController()
 		{
-			InitializeComponent();
+			angle = 0;
 			b = new Bitmap(Height, Height);
 			g = Graphics.FromImage(b);
-			angle = 0;
+			InitializeComponent();
 		}
 
 		private void controllerPictureBox_MouseDown(object sender, MouseEventArgs e)
@@ -53,11 +53,7 @@ namespace SpaceshipsControllerLibrary
 				changing = false;
 		}
 
-		private void controllerPictureBox_SizeChanged(object sender, EventArgs e)
-		{
-		}
-
-		private void DirectionController_MouseLeave(object sender, EventArgs e)
+		private void controllerPictureBox_MouseLeave(object sender, EventArgs e)
 		{
 			changing = false;
 		}

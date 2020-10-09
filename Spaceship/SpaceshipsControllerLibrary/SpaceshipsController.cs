@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Windows.Forms;
 
 using SpaceshipModel;
@@ -63,34 +62,18 @@ namespace SpaceshipsControllerLibrary
 			};
 			layoutFlowPanel.Controls.Add(newItem);
 		}
+
 		private void AddDetailItem(Detail detail, Spaceship spaceship, int level = 1, bool isBody = true)
 		{
-			void detach(object o, EventArgs e)
-			{ world.Detach(detail); UpdateList(); };
-			if (detail.GetType() == typeof(Detail))
-			{
-				DetailItem newItem = new DetailItem(detail, level);
-				newItem.detachButton.Click += detach;
-				if (isBody)
-					newItem.detachButton.Dispose();
-				layoutFlowPanel.Controls.Add(newItem);
-			}
-			else if (detail is Engine engine)
-			{
-				EngineItem newItem = new EngineItem(engine, level);
-				newItem.detachButton.Click += detach;
-				if (isBody)
-					newItem.detachButton.Dispose();
-				layoutFlowPanel.Controls.Add(newItem);
-			}
+			DetailItem newItem = new DetailItem(detail, level);
+			if (detail is Engine engine)
+				newItem = new EngineItem(engine, level);
 			else if (detail is Tank tank)
-			{
-				TankItem newItem = new TankItem(tank, level);
-				newItem.detachButton.Click += detach;
-				if (isBody)
-					newItem.detachButton.Dispose();
-				layoutFlowPanel.Controls.Add(newItem);
-			}
+				newItem = new TankItem(tank, level);
+			newItem.detachButton.Click += (o, e) => { world.Detach(detail); UpdateList(); };
+			if (isBody)
+				newItem.detachButton.Dispose();
+			layoutFlowPanel.Controls.Add(newItem);
 			foreach (Detail child in detail.Children)
 				AddDetailItem(child, spaceship, level + 1, false);
 		}

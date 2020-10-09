@@ -60,7 +60,7 @@
 			this.detailsList.Location = new System.Drawing.Point(0, 0);
 			this.detailsList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.detailsList.Name = "detailsList";
-			this.detailsList.Size = new System.Drawing.Size(613, 88);
+			this.detailsList.Size = new System.Drawing.Size(574, 88);
 			this.detailsList.TabIndex = 4;
 			// 
 			// spaceSplitter
@@ -77,8 +77,8 @@
 			// spaceSplitter.Panel2
 			// 
 			this.spaceSplitter.Panel2.Controls.Add(this.space);
-			this.spaceSplitter.Size = new System.Drawing.Size(613, 448);
-			this.spaceSplitter.SplitterDistance = 162;
+			this.spaceSplitter.Size = new System.Drawing.Size(574, 448);
+			this.spaceSplitter.SplitterDistance = 151;
 			this.spaceSplitter.TabIndex = 6;
 			// 
 			// detailCreaterSplitter
@@ -99,7 +99,7 @@
 			// detailCreaterSplitter.Panel2
 			// 
 			this.detailCreaterSplitter.Panel2.BackColor = System.Drawing.Color.Transparent;
-			this.detailCreaterSplitter.Size = new System.Drawing.Size(162, 448);
+			this.detailCreaterSplitter.Size = new System.Drawing.Size(151, 448);
 			this.detailCreaterSplitter.SplitterDistance = 306;
 			this.detailCreaterSplitter.TabIndex = 7;
 			// 
@@ -123,7 +123,7 @@
 			this.space.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.space.MinimumSize = new System.Drawing.Size(36, 54);
 			this.space.Name = "space";
-			this.space.Size = new System.Drawing.Size(447, 448);
+			this.space.Size = new System.Drawing.Size(419, 448);
 			this.space.TabIndex = 5;
 			// 
 			// spaceshipsController
@@ -133,7 +133,7 @@
 			this.spaceshipsController.Location = new System.Drawing.Point(0, 0);
 			this.spaceshipsController.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.spaceshipsController.Name = "spaceshipsController";
-			this.spaceshipsController.Size = new System.Drawing.Size(211, 540);
+			this.spaceshipsController.Size = new System.Drawing.Size(250, 540);
 			this.spaceshipsController.TabIndex = 2;
 			// 
 			// controllerSplitter
@@ -152,7 +152,7 @@
 			// 
 			this.controllerSplitter.Panel2.Controls.Add(this.spaceshipsController);
 			this.controllerSplitter.Size = new System.Drawing.Size(828, 540);
-			this.controllerSplitter.SplitterDistance = 613;
+			this.controllerSplitter.SplitterDistance = 574;
 			this.controllerSplitter.TabIndex = 7;
 			// 
 			// barSplitter
@@ -170,7 +170,7 @@
 			// barSplitter.Panel2
 			// 
 			this.barSplitter.Panel2.Controls.Add(this.spaceSplitter);
-			this.barSplitter.Size = new System.Drawing.Size(613, 540);
+			this.barSplitter.Size = new System.Drawing.Size(574, 540);
 			this.barSplitter.SplitterDistance = 88;
 			this.barSplitter.TabIndex = 0;
 			// 

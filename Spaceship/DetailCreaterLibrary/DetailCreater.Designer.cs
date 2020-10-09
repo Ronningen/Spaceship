@@ -34,14 +34,14 @@
 			this.typeLabel = new System.Windows.Forms.Label();
 			this.helpButton = new System.Windows.Forms.Button();
 			this.layoutGroupBox = new System.Windows.Forms.GroupBox();
+			this.massBox = new System.Windows.Forms.NumericUpDown();
+			this.massLabel = new System.Windows.Forms.Label();
 			this.widthBox = new System.Windows.Forms.NumericUpDown();
 			this.widthLabel = new System.Windows.Forms.Label();
-			this.massLabel = new System.Windows.Forms.Label();
-			this.massBox = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.canvasPictureBox)).BeginInit();
 			this.layoutGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.widthBox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.massBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.widthBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// typeComboBox
@@ -124,6 +124,42 @@
 			this.layoutGroupBox.TabStop = false;
 			this.layoutGroupBox.Text = "Detail creater";
 			// 
+			// massBox
+			// 
+			this.massBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.massBox.DecimalPlaces = 5;
+			this.massBox.Location = new System.Drawing.Point(57, 165);
+			this.massBox.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+			this.massBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+			this.massBox.Name = "massBox";
+			this.massBox.Size = new System.Drawing.Size(106, 22);
+			this.massBox.TabIndex = 9;
+			this.massBox.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+			// 
+			// massLabel
+			// 
+			this.massLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.massLabel.AutoSize = true;
+			this.massLabel.BackColor = System.Drawing.Color.Transparent;
+			this.massLabel.Location = new System.Drawing.Point(6, 168);
+			this.massLabel.Name = "massLabel";
+			this.massLabel.Size = new System.Drawing.Size(45, 17);
+			this.massLabel.TabIndex = 7;
+			this.massLabel.Text = "Mass:";
+			// 
 			// widthBox
 			// 
 			this.widthBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -152,42 +188,6 @@
 			this.widthLabel.TabIndex = 5;
 			this.widthLabel.Text = "Brush width:";
 			// 
-			// massLabel
-			// 
-			this.massLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.massLabel.AutoSize = true;
-			this.massLabel.BackColor = System.Drawing.Color.Transparent;
-			this.massLabel.Location = new System.Drawing.Point(6, 168);
-			this.massLabel.Name = "massLabel";
-			this.massLabel.Size = new System.Drawing.Size(45, 17);
-			this.massLabel.TabIndex = 7;
-			this.massLabel.Text = "Mass:";
-			// 
-			// massBox
-			// 
-			this.massBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.massBox.DecimalPlaces = 5;
-			this.massBox.Location = new System.Drawing.Point(57, 165);
-			this.massBox.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-			this.massBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            327680});
-			this.massBox.Name = "massBox";
-			this.massBox.Size = new System.Drawing.Size(106, 22);
-			this.massBox.TabIndex = 9;
-			this.massBox.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            327680});
-			// 
 			// DetailCreater
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -202,8 +202,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.canvasPictureBox)).EndInit();
 			this.layoutGroupBox.ResumeLayout(false);
 			this.layoutGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.widthBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.massBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.widthBox)).EndInit();
 			this.ResumeLayout(false);
 
         }
