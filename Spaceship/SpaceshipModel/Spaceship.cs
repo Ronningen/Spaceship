@@ -28,17 +28,17 @@ namespace SpaceshipModel
 		{
 			foreach (Engine engine in Engines)
 			{
-				linearVelocity -= engine.Force / Body.M;
+				linearVelocity -= engine.Force / Body.M * 33 / 1000;
 				Vector f = engine.Force;
 				Vector r = engine.GetDist(Body);
-				angularVelocity -= (f.Y * r.X - f.X * r.Y) / Body.J / (decimal)PI * 180;
+				angularVelocity -= (f.Y * r.X - f.X * r.Y) / Body.J / (decimal)PI * 180 * 33 / 1000;
 			}
 		}
 
 		private void Move(int width, int height)
 		{
-			position.X += (float)linearVelocity.X;
-			position.Y += (float)linearVelocity.Y;
+			position.X += (float)linearVelocity.X * 33 / 1000;
+			position.Y += (float)linearVelocity.Y * 33 / 1000;
 			PointF showPosition = position + Body.Centre;
 			if (showPosition.X < 0)
 				position.X = width - (float)Body.Centre.X;
@@ -48,7 +48,7 @@ namespace SpaceshipModel
 				position.X = -(float)Body.Centre.X;
 			if (showPosition.Y > height)
 				position.Y = -(float)Body.Centre.Y;
-			angle += (float)angularVelocity;
+			angle += (float)angularVelocity * 33 / 1000;
 			angle %= 360;
 		}
 

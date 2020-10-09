@@ -100,7 +100,7 @@
 			// 
 			this.detailCreaterSplitter.Panel2.BackColor = System.Drawing.Color.Transparent;
 			this.detailCreaterSplitter.Size = new System.Drawing.Size(162, 448);
-			this.detailCreaterSplitter.SplitterDistance = 165;
+			this.detailCreaterSplitter.SplitterDistance = 306;
 			this.detailCreaterSplitter.TabIndex = 7;
 			// 
 			// detailCreater
@@ -111,7 +111,7 @@
 			this.detailCreater.Margin = new System.Windows.Forms.Padding(2);
 			this.detailCreater.MinimumSize = new System.Drawing.Size(167, 150);
 			this.detailCreater.Name = "detailCreater";
-			this.detailCreater.Size = new System.Drawing.Size(167, 165);
+			this.detailCreater.Size = new System.Drawing.Size(167, 306);
 			this.detailCreater.TabIndex = 0;
 			// 
 			// space
