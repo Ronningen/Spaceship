@@ -28,6 +28,7 @@ namespace DetailCreaterLibrary
 			brushes.Add(typeof(Tank), Brushes.LightYellow);
 			typeComboBox.Items.AddRange(brushes.Keys.Select(t => t.Name).ToArray());
 			typeComboBox.SelectedIndex = 0;
+			DetailSaved += (d) => UpdateCanvas();
 		}
 
 		private void UpdateCanvas()
@@ -40,14 +41,21 @@ namespace DetailCreaterLibrary
 
 		private void saveButton_Click(object sender, EventArgs e)
 		{
-			if (currentType != null && SomethingDrawed())
+			if (SomethingDrawed())
 			{
-				DetailCreaterDiaologForm dialog = new DetailCreaterDiaologForm(currentType, look);
-				dialog.ShowDialog();
-				if (dialog.Detail != null)
+				if (currentType == typeof(Detail))
+					DetailSaved(new Detail(look, massBox.Value));
+				else if (currentType == typeof(Tank))
 				{
-					DetailSaved?.Invoke(dialog.Detail);
-					UpdateCanvas();
+					TankDiaologForm dialog = new TankDiaologForm();
+					if (dialog.ShowDialog() == DialogResult.OK)
+						DetailSaved(new Tank(look, massBox.Value, dialog.minMassBox.Value, dialog.mtfBox.Value));
+				}
+				else if (currentType == typeof(Engine))
+				{
+					EngineDialogForm dialog = new EngineDialogForm();
+					if (dialog.ShowDialog() == DialogResult.OK)
+						DetailSaved(new Engine(look, massBox.Value, dialog.mtfBox.Value));
 				}
 			}
 			else

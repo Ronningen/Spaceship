@@ -9,17 +9,19 @@ namespace SpaceshipModel
 		/// Коэффициент превращения массы бака (топлива из бака) в силу двигателя на единицу времени.
 		/// </summary>
 		public decimal MTFCoef { get; }
+		private decimal minM;
 		public List<Engine> linkedEngines { get; private set; }
 		public event System.Action MassUpdated;
 
-		public Tank(Bitmap look, decimal mass, decimal MTFCoef) : base(look, mass)
+		public Tank(Bitmap look, decimal mass, decimal minMass, decimal MTFCoef) : base(look, mass)
 		{
+			minM = minMass;
 			this.MTFCoef = MTFCoef;
 		}
 
 		public override void Update()
 		{
-			if (m > 0.001m)
+			if (m > minM)
 			{
 				j /= m;
 				foreach (Engine engine in AggregateEngines(true))
@@ -27,7 +29,7 @@ namespace SpaceshipModel
 				j *= m;
 			}
 			else
-				m = 0.001m;
+				m = minM;
 			base.Update();
 			MassUpdated?.Invoke();
 		}

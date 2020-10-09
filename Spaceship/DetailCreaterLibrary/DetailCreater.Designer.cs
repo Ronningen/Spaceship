@@ -36,9 +36,12 @@
 			this.layoutGroupBox = new System.Windows.Forms.GroupBox();
 			this.widthBox = new System.Windows.Forms.NumericUpDown();
 			this.widthLabel = new System.Windows.Forms.Label();
+			this.massLabel = new System.Windows.Forms.Label();
+			this.massBox = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.canvasPictureBox)).BeginInit();
 			this.layoutGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.widthBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.massBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// typeComboBox
@@ -60,7 +63,7 @@
 			this.canvasPictureBox.BackColor = System.Drawing.Color.White;
 			this.canvasPictureBox.Location = new System.Drawing.Point(6, 99);
 			this.canvasPictureBox.Name = "canvasPictureBox";
-			this.canvasPictureBox.Size = new System.Drawing.Size(157, 44);
+			this.canvasPictureBox.Size = new System.Drawing.Size(157, 60);
 			this.canvasPictureBox.TabIndex = 1;
 			this.canvasPictureBox.TabStop = false;
 			this.canvasPictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasPictureBox_MouseDown);
@@ -72,9 +75,9 @@
 			// 
 			this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.saveButton.Location = new System.Drawing.Point(6, 149);
+			this.saveButton.Location = new System.Drawing.Point(6, 193);
 			this.saveButton.Name = "saveButton";
-			this.saveButton.Size = new System.Drawing.Size(157, 33);
+			this.saveButton.Size = new System.Drawing.Size(157, 34);
 			this.saveButton.TabIndex = 2;
 			this.saveButton.Text = "Save";
 			this.saveButton.UseVisualStyleBackColor = true;
@@ -103,6 +106,8 @@
 			// layoutGroupBox
 			// 
 			this.layoutGroupBox.BackColor = System.Drawing.Color.Transparent;
+			this.layoutGroupBox.Controls.Add(this.massBox);
+			this.layoutGroupBox.Controls.Add(this.massLabel);
 			this.layoutGroupBox.Controls.Add(this.widthBox);
 			this.layoutGroupBox.Controls.Add(this.widthLabel);
 			this.layoutGroupBox.Controls.Add(this.typeLabel);
@@ -114,7 +119,7 @@
 			this.layoutGroupBox.Location = new System.Drawing.Point(0, 0);
 			this.layoutGroupBox.MinimumSize = new System.Drawing.Size(169, 188);
 			this.layoutGroupBox.Name = "layoutGroupBox";
-			this.layoutGroupBox.Size = new System.Drawing.Size(169, 188);
+			this.layoutGroupBox.Size = new System.Drawing.Size(169, 233);
 			this.layoutGroupBox.TabIndex = 7;
 			this.layoutGroupBox.TabStop = false;
 			this.layoutGroupBox.Text = "Detail creater";
@@ -147,6 +152,42 @@
 			this.widthLabel.TabIndex = 5;
 			this.widthLabel.Text = "Brush width:";
 			// 
+			// massLabel
+			// 
+			this.massLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.massLabel.AutoSize = true;
+			this.massLabel.BackColor = System.Drawing.Color.Transparent;
+			this.massLabel.Location = new System.Drawing.Point(6, 168);
+			this.massLabel.Name = "massLabel";
+			this.massLabel.Size = new System.Drawing.Size(45, 17);
+			this.massLabel.TabIndex = 7;
+			this.massLabel.Text = "Mass:";
+			// 
+			// massBox
+			// 
+			this.massBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.massBox.DecimalPlaces = 5;
+			this.massBox.Location = new System.Drawing.Point(57, 165);
+			this.massBox.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+			this.massBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+			this.massBox.Name = "massBox";
+			this.massBox.Size = new System.Drawing.Size(106, 22);
+			this.massBox.TabIndex = 9;
+			this.massBox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+			// 
 			// DetailCreater
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,12 +197,13 @@
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MinimumSize = new System.Drawing.Size(167, 150);
 			this.Name = "DetailCreater";
-			this.Size = new System.Drawing.Size(167, 187);
+			this.Size = new System.Drawing.Size(167, 233);
 			this.SizeChanged += new System.EventHandler(this.DetailCreater_SizeChanged);
 			((System.ComponentModel.ISupportInitialize)(this.canvasPictureBox)).EndInit();
 			this.layoutGroupBox.ResumeLayout(false);
 			this.layoutGroupBox.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.widthBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.massBox)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -176,5 +218,7 @@
 		private System.Windows.Forms.GroupBox layoutGroupBox;
 		private System.Windows.Forms.Label widthLabel;
 		private System.Windows.Forms.NumericUpDown widthBox;
+		private System.Windows.Forms.NumericUpDown massBox;
+		private System.Windows.Forms.Label massLabel;
 	}
 }

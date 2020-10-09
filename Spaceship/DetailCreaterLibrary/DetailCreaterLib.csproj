@@ -51,11 +51,17 @@
     <Compile Include="DetailCreater.Designer.cs">
       <DependentUpon>DetailCreater.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailCreaterDiaologForm.cs">
+    <Compile Include="EngineDialogForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailCreaterDiaologForm.Designer.cs">
-      <DependentUpon>DetailCreaterDiaologForm.cs</DependentUpon>
+    <Compile Include="EngineDialogForm.Designer.cs">
+      <DependentUpon>EngineDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TankDiaologForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TankDiaologForm.Designer.cs">
+      <DependentUpon>TankDiaologForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
@@ -64,8 +70,11 @@
     <EmbeddedResource Include="DetailCreater.resx">
       <DependentUpon>DetailCreater.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailCreaterDiaologForm.resx">
-      <DependentUpon>DetailCreaterDiaologForm.cs</DependentUpon>
+    <EmbeddedResource Include="EngineDialogForm.resx">
+      <DependentUpon>EngineDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TankDiaologForm.resx">
+      <DependentUpon>TankDiaologForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
