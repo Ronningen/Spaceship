@@ -55,7 +55,10 @@ namespace SpaceshipModel
 		{
 			Detail clone = detail.Clone(position);
 			if (editingIndex < 0 || !spaceships[editingIndex].Attach(clone))
+			{
 				spaceships.Add(new Spaceship(clone));
+				editingIndex = spaceships.Count - 1;
+			}
 		}
 	}
 }
