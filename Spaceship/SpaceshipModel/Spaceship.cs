@@ -67,14 +67,14 @@ namespace SpaceshipModel
 			if (showOffset)
 			{
 				g.TranslateTransform(offset.X, offset.Y);
-				g.RotateTransform((float)angle);
+				g.RotateTransform(angle);
 				g.TranslateTransform(-(float)Body.Centre.X, -(float)Body.Centre.Y);
 			}
 			Body.Show(g);
 			if (showOffset)
 			{
 				g.TranslateTransform((float)Body.Centre.X, (float)Body.Centre.Y);
-				g.RotateTransform(-(float)angle);
+				g.RotateTransform(-angle);
 				g.TranslateTransform(-offset.X, -offset.Y);
 			}
 		}
@@ -92,13 +92,12 @@ namespace SpaceshipModel
 
 		public Spaceship Detach(Detail detail)
 		{
-			decimal squaredDistance = (Body.Centre - detail.Centre).SquaredLength;
-			decimal deltaMomentum = angularVelocity * detail.J + detail.M * squaredDistance;
+			decimal deltaMomentum = angularVelocity * detail.J + detail.M * (Body.Centre - detail.Centre).SquaredLength;
 			if (Body.Detach(detail))
 			{
 				Spaceship spaceship = new Spaceship(detail);
 				spaceship.position = position;
-				spaceship.linearVelocity = linearVelocity + (Vector)(Cos((double)angle), Sin((double)angle)) * angularVelocity * (decimal)Sqrt((double)squaredDistance);
+				spaceship.linearVelocity = linearVelocity + (Vector)(Cos(angle), Sin(angle)) * angularVelocity * (Body.Centre - detail.Centre).Length;
 				spaceship.angle = angle;
 
 				Update();

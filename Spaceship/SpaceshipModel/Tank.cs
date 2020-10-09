@@ -25,7 +25,7 @@ namespace SpaceshipModel
 			{
 				j /= m;
 				foreach (Engine engine in AggregateEngines(true))
-					m -= (decimal)engine.Force.Length * MTFCoef * 33 / 1000;
+					m -= engine.Force.Length * MTFCoef * 33 / 1000;
 				j *= m;
 			}
 			else

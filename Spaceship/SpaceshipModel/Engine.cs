@@ -56,7 +56,7 @@ namespace SpaceshipModel
 		{
 			base.Show(g);
 			g.FillEllipse(Brushes.Red, (float)centre.X - 5, (float)centre.Y - 5, 10, 10);
-			g.DrawLine(new Pen(Color.Orange, 3), centre, centre + (decimal)Force.Length / M * (Vector)(CosDir, SinDir) + 10 * (Vector)(CosDir, SinDir));
+			g.DrawLine(new Pen(Color.Orange, 3), centre, centre + Force.Length / M * (Vector)(CosDir, SinDir) + 10 * (Vector)(CosDir, SinDir));
 		}
 
 		public Vector GetDist(Detail detail)

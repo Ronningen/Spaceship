@@ -9,7 +9,7 @@ namespace SpaceshipModel.ShortMath
 		public decimal Y { get; set; }
 
 		public decimal SquaredLength { get => X * X + Y * Y; }
-		public double Length { get => Math.Sqrt((double)SquaredLength); }
+		public decimal Length { get => (decimal)Math.Sqrt((double)SquaredLength); }
 
 		public Vector(decimal x, decimal y) { X = x; Y = y; }
 		public static implicit operator Vector((int x, int y) value) => new Vector(value.x, value.y);
