@@ -1,0 +1,6 @@
+﻿Choose detail type.
+Using left mouse buttomn draw detail form in black window.
+Detail's color depends on detail's type.
+Black window clears when type or size changed.
+Use right mouse button as rubish.
+When you finish drawing detail's form, save detail to append it to bar.
