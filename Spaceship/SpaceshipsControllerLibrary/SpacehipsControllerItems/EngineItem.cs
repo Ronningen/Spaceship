@@ -6,20 +6,17 @@ namespace SpaceshipsControllerLibrary.SpacehipsControllerItems
 {
 	internal partial class EngineItem : UserControl
 	{
-		private Engine engine;
 		public EngineItem(Engine engine, int level)
 		{
 			InitializeComponent();
-			this.engine = engine;
 			panelTabulation.Width *= level;
 			titleLabel.Text += engine.type + engine.number;
 			massLabel.Text += engine.M;
+			mfLabel.Text += engine.MaxForce;
 			forceController.Value = (int)(engine.ForceCoef * 100);
-		}
-
-		private void forceController_Scroll(object sender, EventArgs e)
-		{
-			engine.ForceCoef = (decimal)forceController.Value / 100;
+			directionController.DirectionChanged += (a) => engine.SetDireciton(a);
+			directionController.Draw();
+			forceController.Scroll += (o, e) => engine.ForceCoef = (decimal)forceController.Value / 100;
 		}
 	}
 }

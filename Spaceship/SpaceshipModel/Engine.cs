@@ -8,17 +8,17 @@ namespace SpaceshipModel
 {
 	public class Engine : Detail
 	{
-		public double CosDir { get; }
-		public double SinDir { get; }
+		public double CosDir { get; private set; }
+		public double SinDir { get; private set; }
 
 		private decimal coef;
-		private decimal maxForce;
+		public decimal MaxForce { get; }
 
 		/// <summary>
 		/// Развиваемая двигателем в данный момент сила на еденицу времени 
 		/// (или изменение линейного импульса за эту единицу времени)
 		/// </summary>
-		public Vector Force { get => maxForce * coef * (Vector)(CosDir, SinDir); }
+		public Vector Force { get => MaxForce * coef * (Vector)(CosDir, SinDir); }
 
 		/// <summary>
 		/// Относительная мощность двигателя;
@@ -39,13 +39,17 @@ namespace SpaceshipModel
 			}
 		}
 
-		public Engine(Bitmap look, decimal mass, decimal maxForce, double direction) : base(look, mass)
+		public Engine(Bitmap look, decimal mass, decimal maxForce) : base(look, mass)
 		{
-			direction = -direction / 180 * PI;
+			SetDireciton(0);
+			coef = 0;
+			this.MaxForce = maxForce;
+		}
+
+		public void SetDireciton(float direction)
+		{ 
 			CosDir = Cos(direction);
 			SinDir = Sin(direction);
-			coef = 0;
-			this.maxForce = maxForce;
 		}
 
 		public override void Show(Graphics g)
@@ -62,7 +66,7 @@ namespace SpaceshipModel
 
 		public override string ToString()
 		{
-			return type + number + " max force:" + maxForce;
+			return type + number + " max force:" + MaxForce;
 		}
 	}
 }

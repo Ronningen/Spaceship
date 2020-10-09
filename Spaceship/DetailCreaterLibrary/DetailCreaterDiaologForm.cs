@@ -22,8 +22,6 @@ namespace DetailCreaterLibrary
 				MFMTFLabel.Text += "max force:";
 				MFMTFLabel.Visible = true;
 				MFMTFTextBox.Visible = true;
-				directionLabel.Visible = true;
-				directionTextBox.Visible = true;
 			}
 			else if (type == typeof(Tank))
 			{
@@ -35,18 +33,15 @@ namespace DetailCreaterLibrary
 
 		private void saveButton_Click(object sender, EventArgs e)
 		{
-			if (decimal.TryParse(massTextBox.Text.Replace('.',','), out decimal mass))
+			if (decimal.TryParse(massTextBox.Text.Replace('.', ','), out decimal mass))
 			{
 				if (type == typeof(Engine))
 				{
 					if (decimal.TryParse(MFMTFTextBox.Text.Replace('.', ','), out decimal maxForce))
-						if (double.TryParse(directionTextBox.Text.Replace('.', ','), out double direction))
-						{
-							Detail = new Engine(look, mass, maxForce, direction);
-							Close();
-						}
-						else
-							MessageBox.Show("Enter direction in degrees, by digits.");
+					{
+						Detail = new Engine(look, mass, maxForce);
+						Close();
+					}
 					else
 						MessageBox.Show("Enter max force in Neutons, by digits.");
 				}

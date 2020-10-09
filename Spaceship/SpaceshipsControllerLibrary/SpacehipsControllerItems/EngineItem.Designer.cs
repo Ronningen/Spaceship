@@ -33,7 +33,9 @@
 			this.titleLabel = new System.Windows.Forms.Label();
 			this.detachButton = new System.Windows.Forms.Button();
 			this.forceController = new System.Windows.Forms.TrackBar();
+			this.directionController = new SpaceshipsControllerLibrary.DirectionController();
 			this.massLabel = new System.Windows.Forms.Label();
+			this.mfLabel = new System.Windows.Forms.Label();
 			this.layoutFlowPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.forceController)).BeginInit();
 			this.SuspendLayout();
@@ -47,11 +49,13 @@
 			this.layoutFlowPanel.Controls.Add(this.titleLabel);
 			this.layoutFlowPanel.Controls.Add(this.detachButton);
 			this.layoutFlowPanel.Controls.Add(this.forceController);
+			this.layoutFlowPanel.Controls.Add(this.directionController);
 			this.layoutFlowPanel.Controls.Add(this.massLabel);
+			this.layoutFlowPanel.Controls.Add(this.mfLabel);
 			this.layoutFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.layoutFlowPanel.Location = new System.Drawing.Point(0, 0);
 			this.layoutFlowPanel.Name = "layoutFlowPanel";
-			this.layoutFlowPanel.Size = new System.Drawing.Size(332, 62);
+			this.layoutFlowPanel.Size = new System.Drawing.Size(480, 62);
 			this.layoutFlowPanel.TabIndex = 2;
 			this.layoutFlowPanel.WrapContents = false;
 			// 
@@ -92,17 +96,35 @@
 			this.forceController.Size = new System.Drawing.Size(100, 56);
 			this.forceController.TabIndex = 11;
 			this.forceController.TickFrequency = 5;
-			this.forceController.Scroll += new System.EventHandler(this.forceController_Scroll);
+			// 
+			// directionController
+			// 
+			this.directionController.BackColor = System.Drawing.Color.Transparent;
+			this.directionController.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.directionController.Location = new System.Drawing.Point(276, 3);
+			this.directionController.Name = "directionController";
+			this.directionController.Size = new System.Drawing.Size(58, 56);
+			this.directionController.TabIndex = 13;
 			// 
 			// massLabel
 			// 
-			this.massLabel.Location = new System.Drawing.Point(275, 8);
+			this.massLabel.Location = new System.Drawing.Point(339, 8);
 			this.massLabel.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
 			this.massLabel.Name = "massLabel";
 			this.massLabel.Size = new System.Drawing.Size(49, 46);
-			this.massLabel.TabIndex = 12;
+			this.massLabel.TabIndex = 14;
 			this.massLabel.Text = "Mass: ";
 			this.massLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// mfLabel
+			// 
+			this.mfLabel.Location = new System.Drawing.Point(398, 8);
+			this.mfLabel.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+			this.mfLabel.Name = "mfLabel";
+			this.mfLabel.Size = new System.Drawing.Size(74, 46);
+			this.mfLabel.TabIndex = 12;
+			this.mfLabel.Text = "Max force: ";
+			this.mfLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// EngineItem
 			// 
@@ -113,7 +135,7 @@
 			this.BackColor = System.Drawing.Color.Transparent;
 			this.Controls.Add(this.layoutFlowPanel);
 			this.Name = "EngineItem";
-			this.Size = new System.Drawing.Size(332, 62);
+			this.Size = new System.Drawing.Size(480, 62);
 			this.layoutFlowPanel.ResumeLayout(false);
 			this.layoutFlowPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.forceController)).EndInit();
@@ -128,6 +150,8 @@
 		private System.Windows.Forms.FlowLayoutPanel layoutFlowPanel;
 		private System.Windows.Forms.TrackBar forceController;
 		public System.Windows.Forms.Button detachButton;
+		private System.Windows.Forms.Label mfLabel;
+		private DirectionController directionController;
 		private System.Windows.Forms.Label massLabel;
 	}
 }

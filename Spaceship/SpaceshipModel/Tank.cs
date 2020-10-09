@@ -8,7 +8,7 @@ namespace SpaceshipModel
 		/// <summary>
 		/// Коэффициент превращения массы бака (топлива из бака) в силу двигателя на единицу времени.
 		/// </summary>
-		private decimal MTFCoef;
+		public decimal MTFCoef { get; }
 		public List<Engine> linkedEngines { get; private set; }
 		public event System.Action MassUpdated;
 

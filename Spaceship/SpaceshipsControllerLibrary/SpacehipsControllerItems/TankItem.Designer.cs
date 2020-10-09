@@ -33,6 +33,7 @@
 			this.titleLabel = new System.Windows.Forms.Label();
 			this.detachButton = new System.Windows.Forms.Button();
 			this.massLabel = new System.Windows.Forms.Label();
+			this.mtfLabel = new System.Windows.Forms.Label();
 			this.layoutFlowPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -45,10 +46,11 @@
 			this.layoutFlowPanel.Controls.Add(this.titleLabel);
 			this.layoutFlowPanel.Controls.Add(this.detachButton);
 			this.layoutFlowPanel.Controls.Add(this.massLabel);
+			this.layoutFlowPanel.Controls.Add(this.mtfLabel);
 			this.layoutFlowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.layoutFlowPanel.Location = new System.Drawing.Point(0, 0);
 			this.layoutFlowPanel.Name = "layoutFlowPanel";
-			this.layoutFlowPanel.Size = new System.Drawing.Size(214, 33);
+			this.layoutFlowPanel.Size = new System.Drawing.Size(253, 33);
 			this.layoutFlowPanel.TabIndex = 2;
 			this.layoutFlowPanel.WrapContents = false;
 			// 
@@ -87,11 +89,21 @@
 			// 
 			this.massLabel.AutoSize = true;
 			this.massLabel.Location = new System.Drawing.Point(157, 8);
-			this.massLabel.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+			this.massLabel.Margin = new System.Windows.Forms.Padding(2, 8, 2, 8);
 			this.massLabel.Name = "massLabel";
 			this.massLabel.Size = new System.Drawing.Size(49, 17);
 			this.massLabel.TabIndex = 12;
 			this.massLabel.Text = "Mass: ";
+			// 
+			// mtfLabel
+			// 
+			this.mtfLabel.AutoSize = true;
+			this.mtfLabel.Location = new System.Drawing.Point(210, 8);
+			this.mtfLabel.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+			this.mtfLabel.Name = "mtfLabel";
+			this.mtfLabel.Size = new System.Drawing.Size(35, 17);
+			this.mtfLabel.TabIndex = 13;
+			this.mtfLabel.Text = "mtf: ";
 			// 
 			// TankItem
 			// 
@@ -102,7 +114,7 @@
 			this.BackColor = System.Drawing.Color.Transparent;
 			this.Controls.Add(this.layoutFlowPanel);
 			this.Name = "TankItem";
-			this.Size = new System.Drawing.Size(214, 33);
+			this.Size = new System.Drawing.Size(253, 33);
 			this.layoutFlowPanel.ResumeLayout(false);
 			this.layoutFlowPanel.PerformLayout();
 			this.ResumeLayout(false);
@@ -117,5 +129,6 @@
 		private System.Windows.Forms.Label titleLabel;
 		public System.Windows.Forms.Button detachButton;
 		private System.Windows.Forms.Label massLabel;
+		private System.Windows.Forms.Label mtfLabel;
 	}
 }

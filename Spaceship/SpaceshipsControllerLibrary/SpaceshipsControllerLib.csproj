@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DirectionController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DirectionController.Designer.cs">
+      <DependentUpon>DirectionController.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpacehipsControllerItems\DetailItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DirectionController.resx">
+      <DependentUpon>DirectionController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SpacehipsControllerItems\DetailItem.resx">
       <DependentUpon>DetailItem.cs</DependentUpon>
     </EmbeddedResource>

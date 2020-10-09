@@ -63,7 +63,7 @@ namespace SpaceshipsControllerLibrary
 			};
 			layoutFlowPanel.Controls.Add(newItem);
 		}
-		private void AddDetailItem(Detail detail, Spaceship spaceship, int level = 1)
+		private void AddDetailItem(Detail detail, Spaceship spaceship, int level = 1, bool isBody = true)
 		{
 			void detach(object o, EventArgs e)
 			{ world.Detach(detail); UpdateList(); };
@@ -71,22 +71,28 @@ namespace SpaceshipsControllerLibrary
 			{
 				DetailItem newItem = new DetailItem(detail, level);
 				newItem.detachButton.Click += detach;
+				if (isBody)
+					newItem.detachButton.Dispose();
 				layoutFlowPanel.Controls.Add(newItem);
 			}
 			else if (detail is Engine engine)
 			{
 				EngineItem newItem = new EngineItem(engine, level);
 				newItem.detachButton.Click += detach;
+				if (isBody)
+					newItem.detachButton.Dispose();
 				layoutFlowPanel.Controls.Add(newItem);
 			}
 			else if (detail is Tank tank)
 			{
 				TankItem newItem = new TankItem(tank, level);
 				newItem.detachButton.Click += detach;
+				if (isBody)
+					newItem.detachButton.Dispose();
 				layoutFlowPanel.Controls.Add(newItem);
 			}
 			foreach (Detail child in detail.Children)
-				AddDetailItem(child, spaceship, level + 1);
+				AddDetailItem(child, spaceship, level + 1, false);
 		}
 	}
 }

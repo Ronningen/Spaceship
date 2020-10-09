@@ -9,9 +9,9 @@ namespace SpaceshipModel
 {
 	public class Spaceship
 	{
-		public Vector position;
+		public PointF position;
 		private Vector linearVelocity;
-		public decimal angle;
+		public float angle;
 		private decimal angularVelocity;
 
 		public Detail Body { get; private set; }
@@ -37,17 +37,18 @@ namespace SpaceshipModel
 
 		private void Move(int width, int height)
 		{
-			position += linearVelocity;
-			Vector showPosition = position + Body.Centre;
+			position.X += (float)linearVelocity.X;
+			position.Y += (float)linearVelocity.Y;
+			PointF showPosition = position + Body.Centre;
 			if (showPosition.X < 0)
-				position.X = width - Body.Centre.X;
+				position.X = width - (float)Body.Centre.X;
 			if (showPosition.Y < 0)
-				position.Y = height - Body.Centre.Y;
+				position.Y = height - (float)Body.Centre.Y;
 			if (showPosition.X > width)
-				position.X = -Body.Centre.X;
+				position.X = -(float)Body.Centre.X;
 			if (showPosition.Y > height)
-				position.Y = -Body.Centre.Y;
-			angle += angularVelocity;
+				position.Y = -(float)Body.Centre.Y;
+			angle += (float)angularVelocity;
 			angle %= 360;
 		}
 
@@ -80,7 +81,7 @@ namespace SpaceshipModel
 
 		public Spaceship(Detail detail)
 		{
-			position = (0, 0);
+			position = new PointF(0, 0);
 			linearVelocity = (0, 0);
 			angle = 0;
 			angularVelocity = 0;

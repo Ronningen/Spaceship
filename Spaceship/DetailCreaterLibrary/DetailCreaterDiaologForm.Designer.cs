@@ -33,15 +33,13 @@
 			this.massTextBox = new System.Windows.Forms.TextBox();
 			this.MFMTFTextBox = new System.Windows.Forms.TextBox();
 			this.MFMTFLabel = new System.Windows.Forms.Label();
-			this.directionTextBox = new System.Windows.Forms.TextBox();
-			this.directionLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// saveButton
 			// 
 			this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.saveButton.Location = new System.Drawing.Point(12, 147);
+			this.saveButton.Location = new System.Drawing.Point(12, 106);
 			this.saveButton.Name = "saveButton";
 			this.saveButton.Size = new System.Drawing.Size(137, 33);
 			this.saveButton.TabIndex = 3;
@@ -89,27 +87,6 @@
 			this.MFMTFLabel.Text = "Enter ";
 			this.MFMTFLabel.Visible = false;
 			// 
-			// directionTextBox
-			// 
-			this.directionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.directionTextBox.Location = new System.Drawing.Point(12, 119);
-			this.directionTextBox.Name = "directionTextBox";
-			this.directionTextBox.Size = new System.Drawing.Size(137, 22);
-			this.directionTextBox.TabIndex = 9;
-			this.directionTextBox.Visible = false;
-			// 
-			// directionLabel
-			// 
-			this.directionLabel.AutoSize = true;
-			this.directionLabel.BackColor = System.Drawing.Color.Transparent;
-			this.directionLabel.Location = new System.Drawing.Point(12, 99);
-			this.directionLabel.Name = "directionLabel";
-			this.directionLabel.Size = new System.Drawing.Size(104, 17);
-			this.directionLabel.TabIndex = 8;
-			this.directionLabel.Text = "Enter direction:";
-			this.directionLabel.Visible = false;
-			// 
 			// DetailCreaterDiaologForm
 			// 
 			this.AcceptButton = this.saveButton;
@@ -117,9 +94,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(161, 193);
-			this.Controls.Add(this.directionTextBox);
-			this.Controls.Add(this.directionLabel);
+			this.ClientSize = new System.Drawing.Size(161, 152);
 			this.Controls.Add(this.MFMTFTextBox);
 			this.Controls.Add(this.MFMTFLabel);
 			this.Controls.Add(this.massTextBox);
@@ -142,7 +117,5 @@
 		private System.Windows.Forms.TextBox massTextBox;
 		private System.Windows.Forms.TextBox MFMTFTextBox;
 		private System.Windows.Forms.Label MFMTFLabel;
-		private System.Windows.Forms.TextBox directionTextBox;
-		private System.Windows.Forms.Label directionLabel;
 	}
 }
