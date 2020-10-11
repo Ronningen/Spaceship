@@ -84,23 +84,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DetailCreaterLibrary\DetailCreatorLib.csproj">
+    <ProjectReference Include="..\DetailCreatorLib\DetailCreatorLib.csproj">
       <Project>{7f4f1f90-abe5-42f6-b50d-a790314ac1f2}</Project>
       <Name>DetailCreatorLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DetailsBarLibrary\DetailsBarLib.csproj">
+    <ProjectReference Include="..\DetailsBarLib\DetailsBarLib.csproj">
       <Project>{8f174a12-222b-4402-bfa8-e8bd4b1bc0f7}</Project>
       <Name>DetailsBarLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SpaceLibrary\SpaceLib.csproj">
-      <Project>{42520E53-86A6-4A06-9897-75FD8590117A}</Project>
+    <ProjectReference Include="..\SpaceLib\SpaceLib.csproj">
+      <Project>{42520e53-86a6-4a06-9897-75fd8590117a}</Project>
       <Name>SpaceLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
-      <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
+    <ProjectReference Include="..\SpaceshipModelLib\SpaceshipModelLib.csproj">
+      <Project>{2187ca25-509b-4a64-8cb8-4e4b78a3c891}</Project>
       <Name>SpaceshipModelLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SpaceshipsControllerLibrary\SpaceshipsControllerLib.csproj">
+    <ProjectReference Include="..\SpaceshipsControllerLib\SpaceshipsControllerLib.csproj">
       <Project>{f74eeaea-230e-420d-ac66-22fedaf162bc}</Project>
       <Name>SpaceshipsControllerLib</Name>
     </ProjectReference>

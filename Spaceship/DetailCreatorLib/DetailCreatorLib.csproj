@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F174A12-222B-4402-BFA8-E8BD4B1BC0F7}</ProjectGuid>
+    <ProjectGuid>{7F4F1F90-ABE5-42F6-B50D-A790314AC1F2}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DetailsBarLibrary</RootNamespace>
-    <AssemblyName>DetailsBarLibrary</AssemblyName>
+    <RootNamespace>DetailCreaterLibrary</RootNamespace>
+    <AssemblyName>DetailCreaterLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,28 +45,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailsBar.cs">
+    <Compile Include="DetailCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DetailsBar.Designer.cs">
-      <DependentUpon>DetailsBar.cs</DependentUpon>
+    <Compile Include="DetailCreator.Designer.cs">
+      <DependentUpon>DetailCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngineDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineDialogForm.Designer.cs">
+      <DependentUpon>EngineDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TankDiaologForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TankDiaologForm.Designer.cs">
+      <DependentUpon>TankDiaologForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DetailCreator.resx">
+      <DependentUpon>DetailCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineDialogForm.resx">
+      <DependentUpon>EngineDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TankDiaologForm.resx">
+      <DependentUpon>TankDiaologForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="helpNote.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
-      <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
+    <ProjectReference Include="..\SpaceshipModelLib\SpaceshipModelLib.csproj">
+      <Project>{2187ca25-509b-4a64-8cb8-4e4b78a3c891}</Project>
       <Name>SpaceshipModelLib</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="DetailsBar.resx">
-      <DependentUpon>DetailsBar.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

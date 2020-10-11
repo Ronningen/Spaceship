@@ -96,12 +96,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DetailCreaterLibrary\DetailCreatorLib.csproj">
-      <Project>{7F4F1F90-ABE5-42F6-B50D-A790314AC1F2}</Project>
-      <Name>DetailCreatorLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
-      <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
+    <ProjectReference Include="..\SpaceshipModelLib\SpaceshipModelLib.csproj">
+      <Project>{2187ca25-509b-4a64-8cb8-4e4b78a3c891}</Project>
       <Name>SpaceshipModelLib</Name>
     </ProjectReference>
   </ItemGroup>

@@ -60,17 +60,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
-      <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
-      <Name>SpaceshipModelLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SpaceshipsControllerLibrary\SpaceshipsControllerLib.csproj">
-      <Project>{f74eeaea-230e-420d-ac66-22fedaf162bc}</Project>
-      <Name>SpaceshipsControllerLib</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\SpaceshipModelLib\SpaceshipModelLib.csproj">
+      <Project>{2187ca25-509b-4a64-8cb8-4e4b78a3c891}</Project>
+      <Name>SpaceshipModelLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
