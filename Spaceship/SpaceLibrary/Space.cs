@@ -2,10 +2,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using SpaceshipModel;
-using SpaceshipModel.ShortMath;
+using SpaceshipModelLib;
 
-namespace SpaceLibrary
+namespace SpaceLib
 {
 	public partial class Space : UserControl
 	{

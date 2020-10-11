@@ -3,9 +3,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-using SpaceshipModel;
+using SpaceshipModelLib;
 
-namespace DetailsBarLibrary
+namespace DetailsBarLib
 {
 	public partial class DetailsBar : UserControl
 	{

@@ -84,9 +84,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DetailCreaterLibrary\DetailCreaterLib.csproj">
+    <ProjectReference Include="..\DetailCreaterLibrary\DetailCreatorLib.csproj">
       <Project>{7f4f1f90-abe5-42f6-b50d-a790314ac1f2}</Project>
-      <Name>DetailCreaterLib</Name>
+      <Name>DetailCreatorLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\DetailsBarLibrary\DetailsBarLib.csproj">
       <Project>{8f174a12-222b-4402-bfa8-e8bd4b1bc0f7}</Project>
@@ -96,9 +96,9 @@
       <Project>{42520E53-86A6-4A06-9897-75FD8590117A}</Project>
       <Name>SpaceLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModel.csproj">
+    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
       <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
-      <Name>SpaceshipModel</Name>
+      <Name>SpaceshipModelLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\SpaceshipsControllerLibrary\SpaceshipsControllerLib.csproj">
       <Project>{f74eeaea-230e-420d-ac66-22fedaf162bc}</Project>

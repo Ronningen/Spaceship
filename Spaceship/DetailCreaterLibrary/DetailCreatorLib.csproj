@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailCreater.cs">
+    <Compile Include="DetailCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DetailCreater.Designer.cs">
-      <DependentUpon>DetailCreater.cs</DependentUpon>
+    <Compile Include="DetailCreator.Designer.cs">
+      <DependentUpon>DetailCreator.cs</DependentUpon>
     </Compile>
     <Compile Include="EngineDialogForm.cs">
       <SubType>Form</SubType>
@@ -67,8 +67,8 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DetailCreater.resx">
-      <DependentUpon>DetailCreater.cs</DependentUpon>
+    <EmbeddedResource Include="DetailCreator.resx">
+      <DependentUpon>DetailCreator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EngineDialogForm.resx">
       <DependentUpon>EngineDialogForm.cs</DependentUpon>
@@ -84,9 +84,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModel.csproj">
+    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
       <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
-      <Name>SpaceshipModel</Name>
+      <Name>SpaceshipModelLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

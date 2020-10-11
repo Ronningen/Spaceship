@@ -1,4 +1,4 @@
-﻿namespace SpaceshipsControllerLibrary
+﻿namespace SpaceshipsControllerLib
 {
 	partial class DirectionController
 	{

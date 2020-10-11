@@ -58,9 +58,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpaceshipModel\SpaceshipModel.csproj">
+    <ProjectReference Include="..\SpaceshipModel\SpaceshipModelLib.csproj">
       <Project>{d7219c4d-7435-4d1b-9907-c2876ef4b102}</Project>
-      <Name>SpaceshipModel</Name>
+      <Name>SpaceshipModelLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

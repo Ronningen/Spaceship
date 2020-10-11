@@ -1,4 +1,4 @@
-﻿namespace DetailCreaterLibrary
+﻿namespace DetailCreatorLib
 {
 	partial class TankDiaologForm
 	{

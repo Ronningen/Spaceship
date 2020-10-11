@@ -1,4 +1,4 @@
-﻿namespace SpaceshipsControllerLibrary.SpacehipsControllerItems
+﻿namespace SpaceshipsControllerLib.SpacehipsControllerItems
 {
 	partial class EngineItem
 	{
@@ -30,7 +30,7 @@
 		{
 			components = new System.ComponentModel.Container();
 			this.forceController = new System.Windows.Forms.TrackBar();
-			this.directionController = new SpaceshipsControllerLibrary.DirectionController();
+			this.directionController = new SpaceshipsControllerLib.DirectionController();
 			this.mfLabel = new System.Windows.Forms.Label();
 			// 
 			// forceController

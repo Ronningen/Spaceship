@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace SpaceshipModel.ShortMath
+namespace SpaceshipModelLib.ShortMath
 {
 	public struct Vector
 	{

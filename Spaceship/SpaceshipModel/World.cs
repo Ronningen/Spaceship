@@ -1,9 +1,9 @@
 ﻿using System.Drawing;
 using System.Collections.Generic;
 
-using SpaceshipModel.ShortMath;
+using SpaceshipModelLib.ShortMath;
 
-namespace SpaceshipModel
+namespace SpaceshipModelLib
 {
 	public class World
 	{

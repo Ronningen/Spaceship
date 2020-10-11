@@ -1,4 +1,4 @@
-﻿namespace SpaceLibrary
+﻿namespace SpaceLib
 {
     partial class Space
     {

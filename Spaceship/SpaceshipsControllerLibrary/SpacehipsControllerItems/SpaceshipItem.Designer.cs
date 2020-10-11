@@ -1,4 +1,4 @@
-﻿namespace SpaceshipsControllerLibrary.SpacehipsControllerItems
+﻿namespace SpaceshipsControllerLib.SpacehipsControllerItems
 {
 	partial class SpaceshipItem
 	{

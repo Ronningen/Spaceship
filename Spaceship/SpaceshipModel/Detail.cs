@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Linq;
 
-using SpaceshipModel.ShortMath;
+using SpaceshipModelLib.ShortMath;
 
-namespace SpaceshipModel
+namespace SpaceshipModelLib
 {
 	public class Detail
 	{

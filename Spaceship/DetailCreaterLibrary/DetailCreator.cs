@@ -4,11 +4,11 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-using SpaceshipModel;
+using SpaceshipModelLib;
 
-namespace DetailCreaterLibrary
+namespace DetailCreatorLib
 {
-	public partial class DetailCreater : UserControl
+	public partial class DetailCreator : UserControl
 	{
 		private Brush brush;
 		private Dictionary<Type, Brush> brushes;
@@ -19,7 +19,7 @@ namespace DetailCreaterLibrary
 		public delegate void DetailHandler(Detail detail);
 		public event DetailHandler DetailSaved;
 
-		public DetailCreater()
+		public DetailCreator()
 		{
 			InitializeComponent();
 			brushes = new Dictionary<Type, Brush>();
@@ -47,7 +47,7 @@ namespace DetailCreaterLibrary
 					DetailSaved(new Detail(look, massBox.Value));
 				else if (currentType == typeof(Tank))
 				{
-					TankDiaologForm dialog = new TankDiaologForm();
+					TankDiaologForm dialog = new TankDiaologForm(massBox.Value);
 					if (dialog.ShowDialog() == DialogResult.OK)
 						DetailSaved(new Tank(look, massBox.Value, dialog.minMassBox.Value, dialog.mtfBox.Value));
 				}

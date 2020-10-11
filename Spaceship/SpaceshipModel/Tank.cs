@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace SpaceshipModel
+namespace SpaceshipModelLib
 {
 	public class Tank : Detail
 	{

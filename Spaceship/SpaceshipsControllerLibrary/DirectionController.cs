@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using static System.Math;
 
-namespace SpaceshipsControllerLibrary
+namespace SpaceshipsControllerLib
 {
 	public partial class DirectionController : UserControl
 	{

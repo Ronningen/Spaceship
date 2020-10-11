@@ -1,12 +1,13 @@
 ﻿using System.Windows.Forms;
 
-namespace DetailCreaterLibrary
+namespace DetailCreatorLib
 {
 	internal partial class TankDiaologForm : Form
 	{
-		public TankDiaologForm()
+		public TankDiaologForm(decimal mass)
 		{
 			InitializeComponent();
+			minMassBox.Maximum = mass;
 		}
 
 		private void saveButton_Click(object sender, System.EventArgs e)

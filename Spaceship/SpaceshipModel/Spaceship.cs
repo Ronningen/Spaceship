@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-using SpaceshipModel.ShortMath;
+using SpaceshipModelLib.ShortMath;
 
 using static System.Math;
 
-namespace SpaceshipModel
+namespace SpaceshipModelLib
 {
 	public class Spaceship
 	{

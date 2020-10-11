@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using System.Windows.Forms;
 
-using SpaceshipModel;
+using SpaceshipModelLib;
 
-using SpaceshipsControllerLibrary.SpacehipsControllerItems;
+using SpaceshipsControllerLib.SpacehipsControllerItems;
 
-namespace SpaceshipsControllerLibrary
+namespace SpaceshipsControllerLib
 {
 	public partial class SpaceshipsController : UserControl
 	{

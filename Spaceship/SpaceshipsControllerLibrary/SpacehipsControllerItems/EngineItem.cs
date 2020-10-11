@@ -1,6 +1,6 @@
-﻿using SpaceshipModel;
+﻿using SpaceshipModelLib;
 
-namespace SpaceshipsControllerLibrary.SpacehipsControllerItems
+namespace SpaceshipsControllerLib.SpacehipsControllerItems
 {
 	internal partial class EngineItem : DetailItem
 	{

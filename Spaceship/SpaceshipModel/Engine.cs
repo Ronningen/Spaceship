@@ -1,10 +1,10 @@
 ﻿using System.Drawing;
 
-using SpaceshipModel.ShortMath;
+using SpaceshipModelLib.ShortMath;
 
 using static System.Math;
 
-namespace SpaceshipModel
+namespace SpaceshipModelLib
 {
 	public class Engine : Detail
 	{

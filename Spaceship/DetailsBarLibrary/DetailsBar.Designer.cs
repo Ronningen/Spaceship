@@ -1,4 +1,4 @@
-﻿namespace DetailsBarLibrary
+﻿namespace DetailsBarLib
 {
 	partial class DetailsBar
 	{

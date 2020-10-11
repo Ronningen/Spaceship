@@ -1,6 +1,6 @@
-﻿namespace DetailCreaterLibrary
+﻿namespace DetailCreatorLib
 {
-    partial class DetailCreater
+    partial class DetailCreator
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -122,7 +122,7 @@
 			this.layoutGroupBox.Size = new System.Drawing.Size(169, 233);
 			this.layoutGroupBox.TabIndex = 7;
 			this.layoutGroupBox.TabStop = false;
-			this.layoutGroupBox.Text = "Detail creater";
+			this.layoutGroupBox.Text = "Detail creator";
 			// 
 			// massBox
 			// 
@@ -188,15 +188,15 @@
 			this.widthLabel.TabIndex = 5;
 			this.widthLabel.Text = "Brush width:";
 			// 
-			// DetailCreater
+			// DetailCreator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.White;
+			this.BackColor = System.Drawing.Color.Transparent;
 			this.Controls.Add(this.layoutGroupBox);
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MinimumSize = new System.Drawing.Size(167, 150);
-			this.Name = "DetailCreater";
+			this.Name = "DetailCreator";
 			this.Size = new System.Drawing.Size(167, 233);
 			this.SizeChanged += new System.EventHandler(this.DetailCreater_SizeChanged);
 			((System.ComponentModel.ISupportInitialize)(this.canvasPictureBox)).EndInit();

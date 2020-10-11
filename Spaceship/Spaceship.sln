@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship", "Spaceship\Spaceship.csproj", "{9885C816-2987-4A0E-AB04-7063F14031EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetailCreaterLib", "DetailCreaterLibrary\DetailCreaterLib.csproj", "{7F4F1F90-ABE5-42F6-B50D-A790314AC1F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetailCreatorLib", "DetailCreaterLibrary\DetailCreatorLib.csproj", "{7F4F1F90-ABE5-42F6-B50D-A790314AC1F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceshipModel", "SpaceshipModel\SpaceshipModel.csproj", "{D7219C4D-7435-4D1B-9907-C2876EF4B102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceshipModelLib", "SpaceshipModel\SpaceshipModelLib.csproj", "{D7219C4D-7435-4D1B-9907-C2876EF4B102}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceshipsControllerLib", "SpaceshipsControllerLibrary\SpaceshipsControllerLib.csproj", "{F74EEAEA-230E-420D-AC66-22FEDAF162BC}"
 EndProject

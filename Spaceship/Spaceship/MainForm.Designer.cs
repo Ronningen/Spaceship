@@ -28,12 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.detailsList = new DetailsBarLibrary.DetailsBar();
+			this.detailsList = new DetailsBarLib.DetailsBar();
 			this.spaceSplitter = new System.Windows.Forms.SplitContainer();
 			this.detailCreaterSplitter = new System.Windows.Forms.SplitContainer();
-			this.detailCreater = new DetailCreaterLibrary.DetailCreater();
-			this.space = new SpaceLibrary.Space();
-			this.spaceshipsController = new SpaceshipsControllerLibrary.SpaceshipsController();
+			this.detailCreater = new DetailCreatorLib.DetailCreator();
+			this.space = new SpaceLib.Space();
+			this.spaceshipsController = new SpaceshipsControllerLib.SpaceshipsController();
 			this.controllerSplitter = new System.Windows.Forms.SplitContainer();
 			this.barSplitter = new System.Windows.Forms.SplitContainer();
 			((System.ComponentModel.ISupportInitialize)(this.spaceSplitter)).BeginInit();
@@ -208,12 +208,12 @@
 
 		#endregion
 
-		private SpaceshipsControllerLibrary.SpaceshipsController spaceshipsController;
-		private DetailsBarLibrary.DetailsBar detailsList;
-		private SpaceLibrary.Space space;
+		private SpaceshipsControllerLib.SpaceshipsController spaceshipsController;
+		private DetailsBarLib.DetailsBar detailsList;
+		private SpaceLib.Space space;
 		private System.Windows.Forms.SplitContainer spaceSplitter;
 		private System.Windows.Forms.SplitContainer detailCreaterSplitter;
-		private DetailCreaterLibrary.DetailCreater detailCreater;
+		private DetailCreatorLib.DetailCreator detailCreater;
 		private System.Windows.Forms.SplitContainer controllerSplitter;
 		private System.Windows.Forms.SplitContainer barSplitter;
 	}
