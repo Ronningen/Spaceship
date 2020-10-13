@@ -43,7 +43,7 @@ namespace SpaceshipModelLib
 		{
 			SetDireciton(0);
 			coef = 0;
-			this.MaxForce = maxForce;
+			MaxForce = maxForce;
 		}
 
 		public void SetDireciton(float direction)
